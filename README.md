@@ -1,7 +1,3 @@
-# debian-kiosk-installer
-Pequeno script de instalação para configurar um quiosque mínimo com Chromium para distribuições Linux alimentadas em Debian Criado por josfaber
-
-
 # Kiosk installer for Debian based Linux distros
 Small installer script to setup a minimal kiosk with Chromium for Debian based Linux distros. This installer is heavily based on the excellent [instructions by Will Haley](http://willhaley.com/blog/debian-fullscreen-gui-kiosk/).
 
