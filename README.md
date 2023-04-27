@@ -1,4 +1,4 @@
-# Kiosk installer for Debian based Linux distros
+# Kiosk installer for Debian based Linux distros 11
 Small installer script to setup a minimal kiosk with Chromium for Debian 11 based Linux distros. This installer is heavily based on the excellent [instructions by Will Haley](http://willhaley.com/blog/debian-fullscreen-gui-kiosk/).
 
 ## Usage
