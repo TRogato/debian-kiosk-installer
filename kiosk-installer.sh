@@ -17,13 +17,13 @@ apt-get install \
 mkdir -p /home/kiosk/.config/openbox
 
 # create group
-sudo groupadd kiosk
+groupadd kiosk
 
 # create user if not exists
-sudo id -u kiosk &>/dev/null || sudo useradd -m kiosk -g kiosk -s /bin/bash 
+id -u kiosk &>/dev/null || useradd -m kiosk -g kiosk -s /bin/bash 
 
 # rights
-sudo chown -R kiosk:kiosk /home/kiosk
+chown -R kiosk:kiosk /home/kiosk
 
 # remove virtual consoles
 if [ -e "/etc/X11/xorg.conf" ]; then
