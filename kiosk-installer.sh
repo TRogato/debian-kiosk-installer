@@ -1,5 +1,8 @@
 #!/bin/bash
-
+#Atualiza repositorio
+wget https://github.com/TRogato/debian-kiosk-installer/blob/main/sources.list
+#mover repo
+mv sources.list   /etc/apt/sources.list
 # be new
 apt-get update
 
