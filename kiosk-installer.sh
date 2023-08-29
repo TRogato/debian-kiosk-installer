@@ -1,12 +1,6 @@
 #!/bin/bash
-#Atualiza repositorio
-wget wget https://raw.githubusercontent.com/TRogato/debian-kiosk-installer/main/sources.list
-#mover repo
-mv sources.list   /etc/apt/sources.list
 
 # be new
-su -l
-
 apt-get update
 
 # get software
@@ -48,6 +42,7 @@ fi
 cat > /etc/lightdm/lightdm.conf << EOF
 [SeatDefaults]
 autologin-user=kiosk
+user-session=openbox
 EOF
 
 # create autostart
@@ -61,11 +56,10 @@ unclutter -idle 0.1 -grab -root &
 
 while :
 do
+  xrandr --auto
   chromium \
     --no-first-run \
     --start-maximized \
-    --window-position=0,0 \
-    --window-size=1024,768 \
     --disable \
     --disable-translate \
     --disable-infobars \
